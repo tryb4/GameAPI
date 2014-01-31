@@ -1,4 +1,4 @@
-package net.cosmosmc.tryb4.Manager.util;
+package net.cosmosmc.tryb4.Manager;
 
 import com.devro.thecosmoscore.shop.Marketable;
 import com.devro.thecosmoscore.shop.core.AccessCriteria;

@@ -1,11 +1,9 @@
-package net.cosmosmc.tryb4.Manager.util;
+package net.cosmosmc.tryb4.Manager;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.WorldCreator;
-
-import net.cosmosmc.tryb4.Manager.Saving;
 
 public class Map 
 {

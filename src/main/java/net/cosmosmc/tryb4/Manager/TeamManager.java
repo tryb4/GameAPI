@@ -1,7 +1,9 @@
-package net.cosmosmc.tryb4.Manager.util;
+package net.cosmosmc.tryb4.Manager;
 
+import java.util.ArrayList;
 import java.util.List;
 
+import net.cosmosmc.tryb4.Manager.util.l;
 import org.bukkit.entity.Player;
 import org.bukkit.scoreboard.Scoreboard;
 import org.bukkit.scoreboard.Team;
@@ -12,7 +14,7 @@ public class TeamManager
 	/**
 	 * All currently registered teams
 	 */
-	private List<Team> teams;
+	private List<Team> teams = new ArrayList<Team>();
 	/**
 	 * Unregisters all teams
 	 */
@@ -22,7 +24,16 @@ public class TeamManager
 			t.unregister();
 		}
 	}
-	
+
+    /**
+     * Returns all currently registered teams
+     */
+    public List<Team> getTeams() {
+        return teams;
+    }
+
+
+
 	/**
 	 * Registers team specified to scoreboard specified
 	 */

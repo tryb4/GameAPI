@@ -1,4 +1,4 @@
-package net.cosmosmc.tryb4.Manager.util;
+package net.cosmosmc.tryb4.Manager;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -23,6 +23,13 @@ public class Game
 	private int maxPlayers;
 	private int starting = 20;
 	private int ending = -1;
+
+
+    /**
+     * The map that will be played
+     */
+    private Map map;
+
 
     private HashMap<Player, Scoreboard> boards = new HashMap<Player, Scoreboard>();
 
@@ -78,6 +85,12 @@ public class Game
 		return minPlayers;
 	}
 
+    public Map getMap() {
+        return map;
+    }
+    public void setMap(Map m) {
+        this.map = m;
+    }
 
     public Manager getManager() {
         return manager;
@@ -163,7 +176,11 @@ public class Game
      * Ends game
      */
     public void callEnd() {
-
+        for (Player p : playing){
+            clear(p);
+            p.teleport(getMap().loadLocation("lobby"));
+            p.playSound(p.getLocation(), Sound.ENDERMAN_TELEPORT, 1, 16);
+        }
     }
 
 

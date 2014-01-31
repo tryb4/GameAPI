@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="baf6ba99-d0a5-415c-9e1f-f4e250ce4016" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/commands/setlobby.java" />
+      <change type="MOVED" beforePath="C:\Users\Daniel\GameAPI\src\main\java\net\cosmosmc\tryb4\Manager\util\Game.java" afterPath="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/Game.java" />
+      <change type="MOVED" beforePath="C:\Users\Daniel\GameAPI\src\main\java\net\cosmosmc\tryb4\Manager\util\Kit.java" afterPath="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/Kit.java" />
+      <change type="MOVED" beforePath="C:\Users\Daniel\GameAPI\src\main\java\net\cosmosmc\tryb4\Manager\util\Map.java" afterPath="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/Map.java" />
+      <change type="MOVED" beforePath="C:\Users\Daniel\GameAPI\src\main\java\net\cosmosmc\tryb4\Manager\util\TeamManager.java" afterPath="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/TeamManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/Manager.java" afterPath="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/Manager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GameAPI.iws" />
@@ -69,33 +75,46 @@
       <file leaf-file-name="Manager.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/Manager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="126" column="77" selection-start="2497" selection-end="2497" vertical-scroll-proportion="0.0" vertical-offset="1751" max-vertical-offset="3825">
+            <state line="125" column="77" selection-start="2452" selection-end="2452" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="3808">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#605#611#0" expanded="true" />
-                <element signature="e#842#1501#0" expanded="true" />
-                <element signature="e#1490#1491#0" expanded="true" />
-                <element signature="e#1549#1758#0" expanded="true" />
-                <element signature="e#1747#1748#0" expanded="true" />
+                <element signature="e#560#566#0" expanded="true" />
+                <element signature="e#797#1456#0" expanded="true" />
+                <element signature="e#1445#1446#0" expanded="true" />
+                <element signature="e#1504#1713#0" expanded="true" />
+                <element signature="e#1702#1703#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Game.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/util/Game.java">
+      <file leaf-file-name="setlobby.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/commands/setlobby.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="116" column="0" selection-start="2871" selection-end="2871" vertical-scroll-proportion="0.4857143" vertical-offset="1156" max-vertical-offset="4165">
+            <state line="29" column="92" selection-start="961" selection-end="961" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Game.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/Game.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="180" column="43" selection-start="4305" selection-end="4305" vertical-scroll-proportion="0.52307695" vertical-offset="2210" max-vertical-offset="4454">
               <folding>
-                <element signature="e#697#717#0" expanded="true" />
-                <element signature="e#2004#2582#0" expanded="true" />
-                <element signature="e#2563#2564#0" expanded="true" />
-                <element signature="e#3593#3594#0" expanded="true" />
-                <element signature="e#3633#3634#0" expanded="true" />
-                <element signature="e#4332#4333#0" expanded="true" />
-                <element signature="e#4362#4363#0" expanded="true" />
-                <element signature="e#4401#4402#0" expanded="true" />
-                <element signature="e#4433#4434#0" expanded="true" />
+                <element signature="e#767#787#0" expanded="true" />
+                <element signature="e#1977#1978#0" expanded="true" />
+                <element signature="e#2003#2004#0" expanded="true" />
+                <element signature="e#2035#2036#0" expanded="true" />
+                <element signature="e#2063#2064#0" expanded="true" />
+                <element signature="e#2186#2764#0" expanded="true" />
+                <element signature="e#2745#2746#0" expanded="true" />
+                <element signature="e#3775#3776#0" expanded="true" />
+                <element signature="e#3815#3816#0" expanded="true" />
+                <element signature="e#4709#4710#0" expanded="true" />
+                <element signature="e#4739#4740#0" expanded="true" />
+                <element signature="e#4778#4779#0" expanded="true" />
+                <element signature="e#4810#4811#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -129,6 +148,9 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/util/Game.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/Manager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/TeamManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/commands/setlobby.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/Game.java" />
       </list>
     </option>
   </component>
@@ -303,7 +325,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
+              <option name="myItemId" value="commands" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -575,7 +597,7 @@
       <changelist id="baf6ba99-d0a5-415c-9e1f-f4e250ce4016" name="Default" comment="" />
       <created>1391183216915</created>
       <updated>1391183216915</updated>
-      <workItem from="1391183225642" duration="5302000" />
+      <workItem from="1391183225642" duration="5854000" />
     </task>
     <task id="LOCAL-00001" summary="Made changes to lots of stuff">
       <created>1391188787167</created>
@@ -585,11 +607,15 @@
       <created>1391188878085</created>
       <updated>1391188878085</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Made changes to lots of stuff&#10;">
+      <created>1391189048737</created>
+      <updated>1391189048737</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5302000" />
+    <option name="totallyTimeSpent" value="5854000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -662,7 +688,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/util/Kit.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/Kit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="37" selection-start="450" selection-end="450" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1734">
           <folding />
@@ -678,16 +704,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/util/Map.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/Map.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0" vertical-offset="462" max-vertical-offset="1462">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/util/TeamManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="189" selection-end="189" vertical-scroll-proportion="0.071428575" vertical-offset="3" max-vertical-offset="2006">
           <folding />
         </state>
       </provider>
@@ -699,33 +718,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/Manager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/TeamManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="77" selection-start="2497" selection-end="2497" vertical-scroll-proportion="0.0" vertical-offset="1751" max-vertical-offset="3825">
+        <state line="24" column="9" selection-start="480" selection-end="480" vertical-scroll-proportion="0.33626375" vertical-offset="0" max-vertical-offset="2159">
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#605#611#0" expanded="true" />
-            <element signature="e#842#1501#0" expanded="true" />
-            <element signature="e#1490#1491#0" expanded="true" />
-            <element signature="e#1549#1758#0" expanded="true" />
-            <element signature="e#1747#1748#0" expanded="true" />
+            <element signature="e#357#363#0" expanded="true" />
+            <element signature="e#580#581#0" expanded="true" />
+            <element signature="e#608#609#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/util/Game.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/Manager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="0" selection-start="2871" selection-end="2871" vertical-scroll-proportion="0.4857143" vertical-offset="1156" max-vertical-offset="4165">
+        <state line="125" column="77" selection-start="2452" selection-end="2452" vertical-scroll-proportion="0.0" vertical-offset="1734" max-vertical-offset="3808">
           <folding>
-            <element signature="e#697#717#0" expanded="true" />
-            <element signature="e#2004#2582#0" expanded="true" />
-            <element signature="e#2563#2564#0" expanded="true" />
-            <element signature="e#3593#3594#0" expanded="true" />
-            <element signature="e#3633#3634#0" expanded="true" />
-            <element signature="e#4332#4333#0" expanded="true" />
-            <element signature="e#4362#4363#0" expanded="true" />
-            <element signature="e#4401#4402#0" expanded="true" />
-            <element signature="e#4433#4434#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#560#566#0" expanded="true" />
+            <element signature="e#797#1456#0" expanded="true" />
+            <element signature="e#1445#1446#0" expanded="true" />
+            <element signature="e#1504#1713#0" expanded="true" />
+            <element signature="e#1702#1703#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/commands/setlobby.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="92" selection-start="961" selection-end="961" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="180" column="43" selection-start="4305" selection-end="4305" vertical-scroll-proportion="0.52307695" vertical-offset="2210" max-vertical-offset="4454">
+          <folding>
+            <element signature="e#767#787#0" expanded="true" />
+            <element signature="e#1977#1978#0" expanded="true" />
+            <element signature="e#2003#2004#0" expanded="true" />
+            <element signature="e#2035#2036#0" expanded="true" />
+            <element signature="e#2063#2064#0" expanded="true" />
+            <element signature="e#2186#2764#0" expanded="true" />
+            <element signature="e#2745#2746#0" expanded="true" />
+            <element signature="e#3775#3776#0" expanded="true" />
+            <element signature="e#3815#3816#0" expanded="true" />
+            <element signature="e#4709#4710#0" expanded="true" />
+            <element signature="e#4739#4740#0" expanded="true" />
+            <element signature="e#4778#4779#0" expanded="true" />
+            <element signature="e#4810#4811#0" expanded="true" />
           </folding>
         </state>
       </provider>
