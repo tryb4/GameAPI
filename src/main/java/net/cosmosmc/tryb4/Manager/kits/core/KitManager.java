@@ -1,7 +1,6 @@
-package net.cosmosmc.tryb4.Manager;
+package net.cosmosmc.tryb4.Manager.kits.core;
 
 import net.cosmosmc.tryb4.Manager.util.MessageUtils;
-import net.cosmosmc.tryb4.Manager.util.l;
 import org.bukkit.entity.*;
 
 import java.util.ArrayList;
@@ -23,10 +22,10 @@ public class KitManager
         if (k.getAccessCriteria().canAccess(p, k)) {
             removeKit(p, k);
             playerKits.put(p.getName(), k);
-            MessageUtils.mesage(p, "You equipped the " + k.getName() + " kit");
+            MessageUtils.message(p, "Kit", "You equipped the " + k.getName() + " kit");
         }
         else {
-            l._(p, "You do not have access to this kit.", "Error");
+           MessageUtils.message(p, "Error", "You do not have access to this kit.");
         }
     }
     public static Kit getDefaultKit() {
@@ -40,7 +39,7 @@ public class KitManager
     public static void removeKit(Player p, Kit k) {
         if (playerKits.containsKey(p.getName())) {
             playerKits.remove(p.getName());
-            l._(p, "You unequipped the " + k.getName() + " kit", "Kit");
+            MessageUtils.message(p, "Kit", "You unequipped the " + k.getName() + " kit");
         }
     }
 

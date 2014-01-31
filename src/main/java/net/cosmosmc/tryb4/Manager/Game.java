@@ -1,14 +1,12 @@
 package net.cosmosmc.tryb4.Manager;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 import com.devro.thecosmoscore.managers.UserManager;
 import net.cosmosmc.tryb4.Manager.util.Finder;
 import net.cosmosmc.tryb4.Manager.util.SoundsAndEffects;
 import net.cosmosmc.tryb4.Manager.util.Winner;
+import net.cosmosmc.tryb4.Manager.kits.core.KitManager;
 import org.bukkit.*;
 import org.bukkit.entity.Player;
 import org.bukkit.event.block.*;
@@ -154,6 +152,35 @@ public class Game
             playing.add(p);
         }
     }
+
+
+    private List<Player> cantMove = new ArrayList<Player>();
+
+
+    public void spawnPlayer(boolean cantMove, Player p) {
+        if (cantMove) {
+            if (!this.cantMove.contains(p)) {
+                this.cantMove.add(p);
+            }
+        }
+
+        int spawn = 0;
+
+        Random r = new Random();
+
+
+        spawn = r.nextInt(getMap().getSpawnCount())+1;
+
+
+        Location l = map.loadLocation("spawn." + spawn);
+        p.teleport(l);
+        clear(p);
+        if (KitManager.getKit(p) != null)
+        {
+            KitManager.getKit(p).apply(p);
+        }
+    }
+
 
     public void updateBoard(Player p)
     {
