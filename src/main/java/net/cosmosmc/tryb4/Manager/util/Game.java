@@ -1,10 +1,18 @@
 package net.cosmosmc.tryb4.Manager.util;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
+import org.bukkit.*;
 import org.bukkit.entity.Player;
+import org.bukkit.event.block.*;
+import org.bukkit.event.entity.*;
+import org.bukkit.event.player.*;
+import org.bukkit.inventory.*;
 import org.bukkit.scheduler.BukkitRunnable;
+import net.cosmosmc.tryb4.Manager.Manager;
+import org.bukkit.scoreboard.*;
 
 public class Game 
 {
@@ -15,16 +23,25 @@ public class Game
 	private int maxPlayers;
 	private int starting = 20;
 	private int ending = -1;
-	
+
+    private HashMap<Player, Scoreboard> boards = new HashMap<Player, Scoreboard>();
+
 	private List<Integer> task = new ArrayList<Integer>();
 	
 	private boolean useEndTimer = false;
-	
+
+    private Manager manager;
+
+    private boolean canStart = false;
+
+    private boolean started = false;
+
 	/**
 	 * Main purpose of this project.
 	 */
-	public Game(String name) 
+	public Game(String name, Manager m)
 	{
+        this.manager = m;
 		this.name = name;
 		minPlayers = 4;
 		maxPlayers = 6;
@@ -60,27 +77,158 @@ public class Game
 	public int getMin() {
 		return minPlayers;
 	}
-	
-	
-	
-	
-	
-	
-	public void start() 
+
+
+    public Manager getManager() {
+        return manager;
+    }
+
+    public void start()
 	{
-		
+		task.add(
+                new BukkitRunnable() {
+                    @Override
+                    public void run() {
+                        if (canStart){
+                        if (starting > 0) {
+                            starting--;
+                        }
+                        else {
+                            starting = 20;
+                            this.cancel();
+                            task.remove(getTaskId());
+                        }
+                        }else{
+                            this.cancel();
+                        }
+                    }
+                }.runTaskTimer(getManager(), 30, 30).getTaskId()
+        );
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+    private String format(int a, boolean c) {
+        return (a % 60 + (c ? "s" : " Seconds"));
+    }
+
+    public void updateBoard(Player p)
+    {
+        if (boards.containsKey(p)) {
+            Scoreboard b = boards.get(p);
+
+            b.clearSlot(DisplaySlot.SIDEBAR);
+            if (b.getObjective("t") != null) b.getObjective("t").unregister();
+
+            Objective o = b.registerNewObjective("t", "dummy");
+
+            String s = (canStart() ? "§lStarting in §a§l" + format(starting, false) : "§a§lWaiting for Players");
+
+            if (s.length() > 32)
+            {
+                s = s.substring(0, 31);
+            }
+
+            o.setDisplayName(s);
+
+            o.setDisplaySlot(DisplaySlot.SIDEBAR);
+
+
+            p.setScoreboard(b);
+
+        }
+        else {
+            boards.put(p, Bukkit.getScoreboardManager().getNewScoreboard());
+            updateBoard(p);
+        }
+    }
+
+    public void setCanStart(boolean canStart) {
+        this.canStart = canStart;
+    }
+
+    public boolean canStart() {
+        return canStart;
+    }
+
+    /**
+     * When the start() timer is done.
+     *
+     * Here you can use useEndTimer and see if it should start a countdown.
+     *
+     * oh, and you should use: setEnding to set it to how long until it should stop.
+     */
+    public void callStart() {}
+
+
+    /**
+     * Ends game
+     */
+    public void callEnd() {
+
+    }
+
+
+    public void clear(Player p) {
+        PlayerInventory pi = p.getInventory();
+        pi.clear();
+        pi.setArmorContents(null);
+        p.setMaxHealth(20);
+        p.setHealth(20);
+        p.setFoodLevel(20);
+    }
+
+
+    @Deprecated
+    public void end() {}
+
+
+    public boolean isStarted() {
+        return started;
+    }
+    public void setStarted(boolean c){
+        this.started = c;
+    }
+
+
+
+
+
+
+
+
+
+
+    public void playerLeaves(PlayerQuitEvent e){
+        if (playing.contains(e.getPlayer())){
+            playing.remove(e.getPlayer());
+        }
+    }
+    public void playerJoins(PlayerJoinEvent e){
+        if (!playing.contains(e.getPlayer())) {
+            playing.add(e.getPlayer());
+        }
+    }
+    public void playerBreaksBlock(BlockBreakEvent e){e.setCancelled(true);}
+    public void playerKicked(PlayerKickEvent e){}
+    public void playerPlacesBlock(BlockPlaceEvent e){e.setCancelled(true);}
+    public void blockPhysics(BlockPhysicsEvent e){e.setCancelled(true);}
+    public void blockFromTo(BlockFromToEvent e){e.setCancelled(true);}
+    public void playerDies(PlayerDeathEvent e){}
+    public void playerMoves(PlayerMoveEvent e){}
+    public void playerTeleports(PlayerTeleportEvent e){}
+    public void entityDies(EntityDeathEvent e){}
+    public void entityTeleport(EntityTeleportEvent e){}
+    public void entityDamaged(EntityDamageEvent e){}
+    public void entityDamageEntity(EntityDamageByEntityEvent e){}
+    public void entityChangesBlock(EntityChangeBlockEvent e){}
+    public void entityExplodes(EntityExplodeEvent e){e.blockList().clear();}
+
+
+
+
+
+
+
+
 	
 	
 	

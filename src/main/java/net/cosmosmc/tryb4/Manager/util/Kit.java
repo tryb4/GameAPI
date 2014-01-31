@@ -1,11 +1,11 @@
 package net.cosmosmc.tryb4.Manager.util;
 
+import com.devro.thecosmoscore.shop.Marketable;
+import com.devro.thecosmoscore.shop.core.AccessCriteria;
+import com.devro.thecosmoscore.shop.core.FreeAccessCriteria;
 import org.bukkit.entity.Player;
 import org.bukkit.material.MaterialData;
 
-import com.devro.thecosmoscore.Shop.Marketable;
-import com.devro.thecosmoscore.Shop.core.AccessCriteria;
-import com.devro.thecosmoscore.Shop.core.FreeAccessCriteria;
 
 public class Kit implements Marketable {
 

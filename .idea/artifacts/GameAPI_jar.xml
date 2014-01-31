@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="GameAPI:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/GameAPI_jar</output-path>
+    <root id="archive" name="GameAPI.jar">
+      <element id="module-output" name="GameAPI" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/de/schlichtherle/truezip/6.8.3/truezip-6.8.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/rhino/js/1.7R2/js-1.7R2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/bukkit/bukkit/1.7.2-R0.3-SNAPSHOT/bukkit-1.7.2-R0.3-20140131.050750-21.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/devro/TheCosmosCore/1.0-SNAPSHOT/TheCosmosCore-1.0-20140201.094135-20.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/sk89q/jchronic/0.2.4a/jchronic-0.2.4a.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/sk89q/worldedit/5.5.8/worldedit-5.5.8.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/de/kumpelblase2/remoteentities/1.8-SNAPSHOT/remoteentities-1.8-20140104.094216-28.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/bukkit/craftbukkit/1.7.2-R0.3-SNAPSHOT/craftbukkit-1.7.2-R0.3-20140131.050852-25.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/junit/junit/4.8.1/junit-4.8.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
