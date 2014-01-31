@@ -3,7 +3,7 @@ package net.cosmosmc.tryb4.Manager.commands;
 import com.devro.thecosmoscore.commands.core.Command;
 import com.devro.thecosmoscore.commands.core.CommandArgs;
 import com.devro.thecosmoscore.enums.PermissionsRank;
-import net.cosmosmc.tryb4.Manager.Manager;
+import net.cosmosmc.tryb4.Manager.GameAPI;
 
 /**
  * Created by TryB4
@@ -13,19 +13,19 @@ public class startgame {
 
     @Command(name = "startgame,start", rank = PermissionsRank.ADMIN, usage = "/startgame|start")
     public boolean onCommand(CommandArgs a){
-        if (Manager.getCurrentGame() != null) {
-            if (!Manager.loading) {
-                Manager.getCurrentGame().start();
-                Manager.loading = true;
+        if (GameAPI.getCurrentGame() != null) {
+            if (!GameAPI.loading) {
+                GameAPI.getCurrentGame().start();
+                GameAPI.loading = true;
             }
             else {
-                if (Manager.getCurrentGame().getStarting() > 5) {
-                    Manager.getCurrentGame().setStart(5);
+                if (GameAPI.getCurrentGame().getStarting() > 5) {
+                    GameAPI.getCurrentGame().setStart(5);
                 }
             }
         }
 
-        a.getSender().sendMessage("The game " + Manager.getCurrentGame().getName() + " will now start in " + Manager.getCurrentGame().getStarting() + " seconds");
+        a.getSender().sendMessage("The game " + GameAPI.getCurrentGame().getName() + " will now start in " + GameAPI.getCurrentGame().getStarting() + " seconds");
 
 
         return true;
