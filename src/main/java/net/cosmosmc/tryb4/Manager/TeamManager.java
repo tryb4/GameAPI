@@ -93,12 +93,12 @@ public class TeamManager
 		if (isTeam(t)) 
 		{
 			if (!getTeam(t).hasPlayer(p)) {
-			MessageUtils.mesage(p, "Team", "Joined " + t + " Team");
+			MessageUtils.message(p, "Team", "Joined " + t + " Team");
 			getTeam(t).addPlayer(p);
 			}
 		}
 		else {
-			MessageUtils.mesage(p, "Error", "Unknown team: '" + t + "'");
+			MessageUtils.message(p, "Team", "Unknown team: '"+t+"'");
 		}
 	}
 	
@@ -111,12 +111,12 @@ public class TeamManager
 		if (isTeam(t)) 
 		{
 			if (getTeam(t).hasPlayer(p)) {
-				MessageUtils.mesage(p, "Team", "Left " + t + " Team");
+				MessageUtils.message(p, "Team", "Left " + t + " Team");
 				getTeam(t).removePlayer(p);
 				}
 		}
 		else {
-			MessageUtils.mesage(p,"Error", "Unknown team: '" + t + "'");
+			MessageUtils.message(p, "Error", "Unknown team: '"+t+"'");
 		}
 	}
 	
