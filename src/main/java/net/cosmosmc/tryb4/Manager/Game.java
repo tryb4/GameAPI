@@ -153,7 +153,16 @@ public class Game
             c.setScore(14);
             c = o.getScore(Bukkit.getOfflinePlayer("§r§r§r "));
             c.setScore(13);
-
+            c = o.getScore(Bukkit.getOfflinePlayer("§eMax Players:"));
+            c.setScore(12);
+            c = o.getScore(Bukkit.getOfflinePlayer(getMax() + "§r§r§r"));
+            c.setScore(11);
+            c = o.getScore(Bukkit.getOfflinePlayer("§r§r§r§r "));
+            c.setScore(10);
+            c = o.getScore(Bukkit.getOfflinePlayer("§eMin Players:"));
+            c.setScore(9);
+            c = o.getScore(Bukkit.getOfflinePlayer(getMin() + "§r§r§r§r"));
+            c.setScore(8);
 
 
 
