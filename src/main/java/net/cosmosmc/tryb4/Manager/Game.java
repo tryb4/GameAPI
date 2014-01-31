@@ -117,6 +117,14 @@ public class Game
                             starting = 20;
                             this.cancel();
                             task.remove(getTaskId());
+                            for (Player p : playing) {
+                                spawnPlayer(false, p);
+                            }
+                            for (Player p : Bukkit.getOnlinePlayers()) {
+                                if (!playing.contains(p)) {
+                                    addSpectator(p);
+                                }
+                            }
                         }
                         }else{
                             this.cancel();
