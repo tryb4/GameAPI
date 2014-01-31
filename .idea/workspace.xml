@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="baf6ba99-d0a5-415c-9e1f-f4e250ce4016" name="Default" comment="Changes...&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/util/Finder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/util/QueueManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/test/Tracker.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/util/WinBase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/test/WinCondition.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/util/Winner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/Game.java" afterPath="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/Game.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/Manager.java" afterPath="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/Manager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/util/MapUtil.java" afterPath="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/util/MapUtil.java" />
+    <list default="true" id="baf6ba99-d0a5-415c-9e1f-f4e250ce4016" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/commands/startgame.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GameAPI.iws" />
@@ -75,12 +67,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Manager.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Manager.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/Manager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="131" column="34" selection-start="3716" selection-end="3716" vertical-scroll-proportion="0.55714285" vertical-offset="1295" max-vertical-offset="4879">
+            <state line="131" column="34" selection-start="3716" selection-end="3716" vertical-scroll-proportion="0.0" vertical-offset="377" max-vertical-offset="4879">
               <folding>
                 <element signature="e#2643#2651#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="startgame.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/commands/startgame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="159" selection-start="996" selection-end="996" vertical-scroll-proportion="0.5043956" vertical-offset="0" max-vertical-offset="910">
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -163,6 +166,7 @@
         <option value="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/util/Winner.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/Game.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/Manager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/commands/startgame.java" />
       </list>
     </option>
   </component>
@@ -336,7 +340,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
+              <option name="myItemId" value="commands" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -610,7 +614,7 @@
       <created>1391183216915</created>
       <updated>1391183216915</updated>
       <workItem from="1391183225642" duration="7988000" />
-      <workItem from="1391191732432" duration="2784000" />
+      <workItem from="1391191732432" duration="2983000" />
     </task>
     <task id="LOCAL-00001" summary="Made changes to lots of stuff">
       <created>1391188787167</created>
@@ -644,11 +648,15 @@
       <created>1391192000867</created>
       <updated>1391192000867</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Changes...&#10;">
+      <created>1391194525770</created>
+      <updated>1391194525770</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10772000" />
+    <option name="totallyTimeSpent" value="10971000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -927,9 +935,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/Manager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="34" selection-start="3716" selection-end="3716" vertical-scroll-proportion="0.55714285" vertical-offset="1295" max-vertical-offset="4879">
+        <state line="131" column="34" selection-start="3716" selection-end="3716" vertical-scroll-proportion="0.0" vertical-offset="1295" max-vertical-offset="4879">
           <folding>
             <element signature="e#2643#2651#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/commands/startgame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="159" selection-start="996" selection-end="996" vertical-scroll-proportion="0.5043956" vertical-offset="0" max-vertical-offset="663">
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
