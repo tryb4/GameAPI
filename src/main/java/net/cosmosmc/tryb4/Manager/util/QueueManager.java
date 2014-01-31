@@ -1,7 +1,7 @@
 package net.cosmosmc.tryb4.Manager.util;
 
 import net.cosmosmc.tryb4.Manager.Game;
-import net.cosmosmc.tryb4.Manager.Manager;
+import net.cosmosmc.tryb4.Manager.GameAPI;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,16 +15,16 @@ public class QueueManager
     private List<Game> queue = new ArrayList<Game>();
     private int current = -1;
 
-    private Manager manager;
-    public QueueManager(Manager m) {
-        this.manager = m;
+    private GameAPI gameAPI;
+    public QueueManager(GameAPI m) {
+        this.gameAPI = m;
         this.current = 0;
     }
-    public Manager getManager() {
-        return this.manager;
+    public GameAPI getGameAPI() {
+        return this.gameAPI;
     }
-    public void setManager(Manager manager) {
-        this.manager = manager;
+    public void setGameAPI(GameAPI GameAPI) {
+        this.gameAPI = GameAPI;
     }
     public void setQueue(List<Game> queue) {
         this.queue = queue;
