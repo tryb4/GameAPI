@@ -1,9 +1,14 @@
 package net.cosmosmc.tryb4.Manager;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
+import com.devro.thecosmoscore.managers.UserManager;
+import net.cosmosmc.tryb4.Manager.util.Finder;
+import net.cosmosmc.tryb4.Manager.util.SoundsAndEffects;
+import net.cosmosmc.tryb4.Manager.util.Winner;
 import org.bukkit.*;
 import org.bukkit.entity.Player;
 import org.bukkit.event.block.*;
@@ -18,7 +23,8 @@ public class Game
 {
 	private String name;
 	private boolean inUse = false;
-	private List<Player> playing;
+	private List<Player> playing = new ArrayList<Player>();
+    private List<Player> spectators = new ArrayList<Player>();
 	private int minPlayers;
 	private int maxPlayers;
 	private int starting = 20;
@@ -103,6 +109,10 @@ public class Game
                     @Override
                     public void run() {
                         if (canStart){
+                                if (starting < 12)
+                                {
+                                    SoundsAndEffects.playSound(Arrays.asList(Bukkit.getOnlinePlayers()), Sound.NOTE_PLING, starting, 1);
+                                }
                         if (starting > 0) {
                             starting--;
                         }
@@ -121,6 +131,29 @@ public class Game
 
     private String format(int a, boolean c) {
         return (a % 60 + (c ? "s" : " Seconds"));
+    }
+
+
+    public List<Player> getSpectators() {
+        return spectators;
+    }
+
+
+    public void addSpectator(Player p)
+    {
+        if (getPlayers().contains(p)) {
+            playing.remove(p);
+        }
+
+        if (!spectators.contains(p)) {
+            spectators.add(p);
+        }
+    }
+
+    public void addPlayer(Player p){
+        if (!playing.contains(p) && !spectators.contains(p)) {
+            playing.add(p);
+        }
     }
 
     public void updateBoard(Player p)
@@ -173,6 +206,24 @@ public class Game
             boards.put(p, Bukkit.getScoreboardManager().getNewScoreboard());
             updateBoard(p);
         }
+
+
+        if (spectators.contains(p))
+        {
+            PlayerInventory pi = p.getInventory();
+            pi.clear();
+            pi.setArmorContents(null);
+            try {
+                pi.setItem(0, Finder.getCompass(p));
+            }catch (Exception e) {
+            }
+
+            if (!UserManager.getUser(p).isSpectator())
+            {
+                UserManager.getUser(p).setAsSpectator();
+            }
+        }
+
     }
 
     public void setCanStart(boolean canStart) {
@@ -202,6 +253,20 @@ public class Game
             p.teleport(getMap().loadLocation("lobby"));
             p.playSound(p.getLocation(), Sound.ENDERMAN_TELEPORT, 1, 16);
         }
+
+        for (Player p : spectators)
+        {
+            clear(p);
+            p.teleport(getMap().loadLocation("lobby"));
+            p.playSound(p.getLocation(), Sound.ENDERMAN_TELEPORT, 1, 16);
+            if (UserManager.getUser(p).isSpectator()) {
+                UserManager.getUser(p).setAsNonSpectator();
+            }
+        }
+        spectators.clear();
+        setCanStart(false);
+        setStart(20);
+        Manager.gameEnded(this, new Winner("Default Winner"));
     }
 
 
