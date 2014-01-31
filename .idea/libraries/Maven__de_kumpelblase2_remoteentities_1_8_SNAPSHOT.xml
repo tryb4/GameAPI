@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: de.kumpelblase2:remoteentities:1.8-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/de/kumpelblase2/remoteentities/1.8-SNAPSHOT/remoteentities-1.8-20140104.094216-28.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/de/kumpelblase2/remoteentities/1.8-SNAPSHOT/remoteentities-1.8-20140104.094216-28-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/de/kumpelblase2/remoteentities/1.8-SNAPSHOT/remoteentities-1.8-20140104.094216-28-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
