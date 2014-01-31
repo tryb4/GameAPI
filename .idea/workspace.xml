@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="baf6ba99-d0a5-415c-9e1f-f4e250ce4016" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/GameAPI.java" afterPath="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/GameAPI.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/Saving.java" afterPath="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/Saving.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GameAPI.iws" />
@@ -112,6 +113,8 @@
         <option value="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/Game.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/util/Finder.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/GameAPI.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/plugin.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/Saving.java" />
       </list>
     </option>
   </component>
@@ -158,8 +161,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -207,6 +210,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -268,6 +275,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="$USER_HOME$/TestGame" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -519,7 +527,8 @@
       <workItem from="1391183225642" duration="7988000" />
       <workItem from="1391191732432" duration="3064000" />
       <workItem from="1391195003637" duration="897000" />
-      <workItem from="1391195936462" duration="851000" />
+      <workItem from="1391195936462" duration="1688000" />
+      <workItem from="1391202935473" duration="932000" />
     </task>
     <task id="LOCAL-00001" summary="Made changes to lots of stuff">
       <created>1391188787167</created>
@@ -589,11 +598,15 @@
       <created>1391196350030</created>
       <updated>1391196350030</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Changes... duh&#10;">
+      <created>1391196792486</created>
+      <updated>1391196792486</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12800000" />
+    <option name="totallyTimeSpent" value="14569000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -612,7 +625,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -624,6 +636,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942432" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -658,11 +671,19 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/Game.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="279" column="0" selection-start="7318" selection-end="7318" vertical-scroll-proportion="0.0" vertical-offset="4743" max-vertical-offset="6443">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4312#4320#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="178" column="9" selection-start="4392" selection-end="4392" vertical-scroll-proportion="0.0" vertical-offset="3026" max-vertical-offset="6069">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2435#3659#0" expanded="true" />
-            <element signature="e#3640#3641#0" expanded="true" />
             <element signature="e#4312#4320#0" expanded="true" />
           </folding>
         </state>
@@ -677,9 +698,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/util/MapUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="18" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.0" vertical-offset="25" max-vertical-offset="969">
-          <folding />
-        </state>
+        <state line="34" column="18" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.0" vertical-offset="25" max-vertical-offset="969" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/Map.java">
@@ -694,8 +713,6 @@
         <state line="151" column="0" selection-start="3753" selection-end="3753" vertical-scroll-proportion="0.0" vertical-offset="2567" max-vertical-offset="6426">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2435#3659#0" expanded="true" />
-            <element signature="e#3640#3641#0" expanded="true" />
             <element signature="e#4312#4320#0" expanded="true" />
           </folding>
         </state>
@@ -703,9 +720,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/util/MapUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="73" selection-start="660" selection-end="660" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="561">
-          <folding />
-        </state>
+        <state line="22" column="73" selection-start="660" selection-end="660" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="561" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/Map.java">
@@ -720,8 +735,6 @@
         <state line="155" column="58" selection-start="3934" selection-end="3934" vertical-scroll-proportion="0.0" vertical-offset="2635" max-vertical-offset="5338">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2435#3659#0" expanded="true" />
-            <element signature="e#3640#3641#0" expanded="true" />
             <element signature="e#4312#4320#0" expanded="true" />
           </folding>
         </state>
@@ -734,32 +747,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/util/SoundsAndEffects.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="168" selection-end="168" vertical-scroll-proportion="0.1491228" vertical-offset="0" max-vertical-offset="912">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/Saving.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="1258">
-          <folding />
-        </state>
+        <state line="11" column="13" selection-start="168" selection-end="168" vertical-scroll-proportion="0.1491228" vertical-offset="0" max-vertical-offset="912" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/util/WinBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="10" selection-start="200" selection-end="200" vertical-scroll-proportion="0.18681319" vertical-offset="0" max-vertical-offset="910">
-          <folding />
-        </state>
+        <state line="10" column="10" selection-start="200" selection-end="200" vertical-scroll-proportion="0.18681319" vertical-offset="0" max-vertical-offset="910" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/test/Tracker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="23" selection-start="729" selection-end="729" vertical-scroll-proportion="0.7098901" vertical-offset="0" max-vertical-offset="910">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="38" column="23" selection-start="729" selection-end="729" vertical-scroll-proportion="0.7098901" vertical-offset="0" max-vertical-offset="910" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/test/WinCondition.java">
@@ -776,22 +774,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/util/MapUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="18" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.6076923" vertical-offset="25" max-vertical-offset="969">
-          <folding />
-        </state>
+        <state line="34" column="18" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.6076923" vertical-offset="25" max-vertical-offset="969" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/util/Winner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="5" selection-start="610" selection-end="610" vertical-scroll-proportion="0.42087913" vertical-offset="76" max-vertical-offset="986">
-          <folding>
-            <element signature="e#257#265#0" expanded="true" />
-            <element signature="e#503#504#0" expanded="true" />
-            <element signature="e#543#544#0" expanded="true" />
-            <element signature="e#578#579#0" expanded="true" />
-            <element signature="e#609#610#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="30" column="5" selection-start="610" selection-end="610" vertical-scroll-proportion="0.42087913" vertical-offset="76" max-vertical-offset="986" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/teams/core/Team.java">
@@ -806,23 +794,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/kits/core/Kit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="302" selection-end="302" vertical-scroll-proportion="0.093406595" vertical-offset="0" max-vertical-offset="1734">
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1221#1222#0" expanded="false" />
-            <element signature="e#1248#1249#0" expanded="false" />
-            <element signature="e#1314#1315#0" expanded="false" />
-            <element signature="e#1334#1335#0" expanded="false" />
-            <element signature="e#1379#1380#0" expanded="false" />
-            <element signature="e#1404#1405#0" expanded="false" />
-            <element signature="e#1455#1456#0" expanded="false" />
-            <element signature="e#1480#1481#0" expanded="false" />
-            <element signature="e#1518#1519#0" expanded="false" />
-            <element signature="e#1536#1537#0" expanded="false" />
-            <element signature="e#1571#1572#0" expanded="false" />
-            <element signature="e#1589#1590#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="9" column="13" selection-start="302" selection-end="302" vertical-scroll-proportion="0.093406595" vertical-offset="0" max-vertical-offset="1734" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/commands/startgame.java">
@@ -848,25 +820,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/util/MessageUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="136" selection-end="136" vertical-scroll-proportion="0.07472528" vertical-offset="0" max-vertical-offset="910">
-          <folding />
-        </state>
+        <state line="6" column="13" selection-start="136" selection-end="136" vertical-scroll-proportion="0.07472528" vertical-offset="0" max-vertical-offset="910" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/kits/core/KitManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="22" selection-start="1374" selection-end="1374" vertical-scroll-proportion="0.36483517" vertical-offset="365" max-vertical-offset="1275">
-          <folding>
-            <element signature="e#394#407#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="50" column="22" selection-start="1374" selection-end="1374" vertical-scroll-proportion="0.36483517" vertical-offset="365" max-vertical-offset="1275" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/util/Finder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="3" selection-start="298" selection-end="298" vertical-scroll-proportion="0.26086956" vertical-offset="4" max-vertical-offset="901">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -875,18 +841,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="29" selection-start="992" selection-end="992" vertical-scroll-proportion="0.54175824" vertical-offset="0" max-vertical-offset="910">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="153" column="30" selection-start="4099" selection-end="4099" vertical-scroll-proportion="0.48241758" vertical-offset="1890" max-vertical-offset="6494">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2435#3659#0" expanded="true" />
-            <element signature="e#3640#3641#0" expanded="true" />
-            <element signature="e#4312#4320#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -900,15 +854,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/Saving.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="506" selection-end="506" vertical-scroll-proportion="0.33626375" vertical-offset="68" max-vertical-offset="1343">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="14" selection-start="1182" selection-end="1182" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="6443">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4312#4320#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/GameAPI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="40" selection-start="1290" selection-end="1290" vertical-scroll-proportion="0.5791209" vertical-offset="0" max-vertical-offset="5355">
+        <state line="44" column="23" selection-start="1190" selection-end="1190" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5321">
           <folding>
-            <element signature="e#1175#1314#0" expanded="true" />
+            <element signature="e#792#798#0" expanded="true" />
             <element signature="e#1303#1304#0" expanded="true" />
-            <element signature="e#2070#2279#0" expanded="true" />
-            <element signature="e#2268#2269#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="12" selection-start="90" selection-end="90" vertical-scroll-proportion="0.056043956" vertical-offset="0" max-vertical-offset="910">
+          <folding />
         </state>
       </provider>
     </entry>

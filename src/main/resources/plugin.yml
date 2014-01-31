@@ -1,0 +1,4 @@
+main: net.cosmosmc.tryb4.Manager.GameAPI
+name: Games
+authors: [TryB4, DevRo_]
+version: 0.1

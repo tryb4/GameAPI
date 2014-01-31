@@ -13,8 +13,13 @@ public class Saving
 	
 	public static void init(Plugin p) 
 	{
+
+        if (!p.getDataFolder().exists()) {
+            p.getDataFolder().mkdir();
+        }
+
 		f = new File(p.getDataFolder(), "storage.yml");
-		
+
 		if (!f.exists()) 
 		{
 			try {
