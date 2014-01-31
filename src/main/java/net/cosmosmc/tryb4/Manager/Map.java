@@ -11,6 +11,7 @@ public class Map
 	private String name;
 	private String creator;
 	private Game g;
+    private int id;
 	
 	/**
 	 * Creates a map for a game 'g'.
@@ -21,7 +22,18 @@ public class Map
 		this.creator = creator;
 		this.g = g;
 	}
-	
+
+
+    public int getMapCount()
+    {
+        if (Saving.get().get(g.getName() + ".map.numberof") == null) {
+            Saving.get().set(g.getName() + ".map.numberof", 0);
+        Saving.save();
+        }
+        return Saving.get().getInt(g.getName() + ".map.numberof");
+    }
+
+
 	public String getName() {
 		return this.name;
 	}

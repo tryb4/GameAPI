@@ -145,6 +145,18 @@ public class Game
             o.setDisplaySlot(DisplaySlot.SIDEBAR);
 
 
+            Score c = null;
+
+            c = o.getScore(Bukkit.getOfflinePlayer("§ePlayers:"));
+            c.setScore(15);
+            c = o.getScore(Bukkit.getOfflinePlayer(getPlayers().size() + "§r§r"));
+            c.setScore(14);
+            c = o.getScore(Bukkit.getOfflinePlayer("§r§r§r "));
+            c.setScore(13);
+
+
+
+
             p.setScoreboard(b);
 
         }

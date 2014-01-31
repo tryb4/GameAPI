@@ -90,8 +90,15 @@ public class Manager extends JavaPlugin implements Listener {
 	
 	
 	
-	
-	
+	public static Game getGame(String s) {
+        for (Game g : queue) {
+            if (g.getName().equalsIgnoreCase(s)) {
+                return g;
+            }
+        }
+        return null;
+    }
+
 	
 	
 	
@@ -135,6 +142,10 @@ public class Manager extends JavaPlugin implements Listener {
     {
         e.setJoinMessage(ChatColor.DARK_GRAY + "+ " + ChatColor.GRAY + e.getPlayer().getDisplayName());
         getCurrentGame().playerJoins(e);
+        if (getCurrentGame().getMap().loadLocation("lobby") != null) {
+            e.getPlayer().teleport(getCurrentGame().getMap().loadLocation("lobby"));
+        }
+
     }
     @EventHandler
     public void quit(PlayerQuitEvent e)
