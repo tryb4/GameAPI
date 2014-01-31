@@ -85,7 +85,7 @@
       <file leaf-file-name="Game.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/util/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="114" column="36" selection-start="2828" selection-end="2828" vertical-scroll-proportion="0.44835165" vertical-offset="1156" max-vertical-offset="4165">
+            <state line="116" column="0" selection-start="2871" selection-end="2871" vertical-scroll-proportion="0.4857143" vertical-offset="1156" max-vertical-offset="4165">
               <folding>
                 <element signature="e#697#717#0" expanded="true" />
                 <element signature="e#2004#2582#0" expanded="true" />
@@ -318,12 +318,12 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="options.lastSelected" value="reference.settings.project.maven.importing" />
+    <property name="options.lastSelected" value="preferences.pluginManager" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
@@ -575,17 +575,21 @@
       <changelist id="baf6ba99-d0a5-415c-9e1f-f4e250ce4016" name="Default" comment="" />
       <created>1391183216915</created>
       <updated>1391183216915</updated>
-      <workItem from="1391183225642" duration="5161000" />
+      <workItem from="1391183225642" duration="5302000" />
     </task>
     <task id="LOCAL-00001" summary="Made changes to lots of stuff">
       <created>1391188787167</created>
       <updated>1391188787167</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Made changes to lots of stuff&#10;">
+      <created>1391188878085</created>
+      <updated>1391188878085</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5161000" />
+    <option name="totallyTimeSpent" value="5302000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -633,7 +637,8 @@
     </option>
     <MESSAGE value="Made changes to Lots of stuff" />
     <MESSAGE value="Made changes to lots of stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made changes to lots of stuff" />
+    <MESSAGE value="Made changes to lots of stuff&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made changes to lots of stuff&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -710,7 +715,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/util/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="36" selection-start="2828" selection-end="2828" vertical-scroll-proportion="0.44835165" vertical-offset="1156" max-vertical-offset="4165">
+        <state line="116" column="0" selection-start="2871" selection-end="2871" vertical-scroll-proportion="0.4857143" vertical-offset="1156" max-vertical-offset="4165">
           <folding>
             <element signature="e#697#717#0" expanded="true" />
             <element signature="e#2004#2582#0" expanded="true" />
