@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="baf6ba99-d0a5-415c-9e1f-f4e250ce4016" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/util/Finder.java" afterPath="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/util/Finder.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GameAPI.iws" />
@@ -596,7 +595,7 @@
       <workItem from="1391183225642" duration="7988000" />
       <workItem from="1391191732432" duration="3064000" />
       <workItem from="1391195003637" duration="897000" />
-      <workItem from="1391195936462" duration="404000" />
+      <workItem from="1391195936462" duration="411000" />
     </task>
     <task id="LOCAL-00001" summary="Made changes to lots of stuff">
       <created>1391188787167</created>
@@ -658,11 +657,15 @@
       <created>1391196061246</created>
       <updated>1391196061246</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Changes... duh&#10;">
+      <created>1391196344180</created>
+      <updated>1391196344180</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12353000" />
+    <option name="totallyTimeSpent" value="12360000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
