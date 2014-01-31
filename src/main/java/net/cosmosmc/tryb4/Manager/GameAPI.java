@@ -42,6 +42,15 @@ public class GameAPI extends JavaPlugin implements Listener {
 
 
 
+        new BukkitRunnable()
+        {
+            public void run()
+            {
+                manager.setQueue(queue);
+            }
+        }.runTaskTimer(getInstance(), 20, 20);
+
+
 
         new BukkitRunnable(){
             public void run() {
@@ -148,7 +157,16 @@ public class GameAPI extends JavaPlugin implements Listener {
             g.addPlayer(p);
         }
     }
-	
+
+
+
+
+
+
+
+
+
+
 
 	
 	
