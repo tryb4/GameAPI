@@ -2,16 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="baf6ba99-d0a5-415c-9e1f-f4e250ce4016" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/enums/FriendlyFireSetting.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/listeners/NoTeamPVPListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/teams/core/Team.java" />
-      <change type="MOVED" beforePath="C:\Users\Dev\IdeaProjects\GameAPI\src\main\java\net\cosmosmc\tryb4\Manager\Kit.java" afterPath="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/kits/core/Kit.java" />
-      <change type="MOVED" beforePath="C:\Users\Dev\IdeaProjects\GameAPI\src\main\java\net\cosmosmc\tryb4\Manager\KitManager.java" afterPath="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/kits/core/KitManager.java" />
-      <change type="MOVED" beforePath="C:\Users\Dev\IdeaProjects\GameAPI\src\main\java\net\cosmosmc\tryb4\Manager\Manager.java" afterPath="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/GameAPI.java" />
-      <change type="MOVED" beforePath="C:\Users\Dev\IdeaProjects\GameAPI\src\main\java\net\cosmosmc\tryb4\Manager\TeamManager.java" afterPath="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/teams/core/TeamManager.java" />
-      <change type="MOVED" beforePath="C:\Users\Dev\IdeaProjects\GameAPI\src\main\java\net\cosmosmc\tryb4\Manager\commands\setlobby.java" afterPath="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/commands/SetLobbyCommand.java" />
-      <change type="MOVED" beforePath="C:\Users\Dev\IdeaProjects\GameAPI\src\main\java\net\cosmosmc\tryb4\Manager\commands\setmap.java" afterPath="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/commands/SetMapCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/Game.java" afterPath="$PROJECT_DIR$/src/main/java/net/cosmosmc/tryb4/Manager/Game.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GameAPI.iws" />
@@ -822,7 +812,7 @@
       <updated>1391183216915</updated>
       <workItem from="1391183225642" duration="7988000" />
       <workItem from="1391191732432" duration="264000" />
-      <workItem from="1391264045693" duration="1908000" />
+      <workItem from="1391264045693" duration="1949000" />
     </task>
     <task id="LOCAL-00001" summary="Made changes to lots of stuff">
       <created>1391188787167</created>
@@ -852,11 +842,15 @@
       <created>1391191547167</created>
       <updated>1391191547167</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="big Changes.&#10;">
+      <created>1391266485452</created>
+      <updated>1391266485452</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10160000" />
+    <option name="totallyTimeSpent" value="10201000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -877,6 +871,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -886,7 +881,6 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -907,7 +901,8 @@
     <MESSAGE value="Made changes to lots of stuff" />
     <MESSAGE value="Made changes to lots of stuff&#10;" />
     <MESSAGE value="Changes...&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes...&#10;" />
+    <MESSAGE value="big Changes.&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="big Changes.&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
