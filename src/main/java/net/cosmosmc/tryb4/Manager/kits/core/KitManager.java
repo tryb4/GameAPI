@@ -1,4 +1,4 @@
-package net.cosmosmc.tryb4.Manager;
+package net.cosmosmc.tryb4.Manager.kits.core;
 
 import net.cosmosmc.tryb4.Manager.util.MessageUtils;
 import org.bukkit.entity.*;

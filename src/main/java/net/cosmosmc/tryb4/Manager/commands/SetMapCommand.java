@@ -4,19 +4,18 @@ import com.devro.thecosmoscore.commands.core.Command;
 import com.devro.thecosmoscore.commands.core.CommandArgs;
 import com.devro.thecosmoscore.enums.PermissionsRank;
 import net.cosmosmc.tryb4.Manager.Game;
-import net.cosmosmc.tryb4.Manager.Manager;
+import net.cosmosmc.tryb4.Manager.GameAPI;
 import net.cosmosmc.tryb4.Manager.util.MapUtil;
 import org.bukkit.command.*;
-import org.bukkit.entity.*;
 
 /**
  * Created by TryB4
  * GameAPI
  */
-public class setmap {
+public class SetMapCommand {
 
 
-    @Command(name = "setmap", rank = PermissionsRank.ADMIN, usage = "/setmap <number> <name> <author> [game]")
+    @Command(name = "SetMap", rank = PermissionsRank.ADMIN, usage = "/SetMap <number> <name> <author> [game]")
     public boolean onCommand(CommandArgs a){
 
 
@@ -40,14 +39,14 @@ public class setmap {
         String name = a.getArgs()[1];
         String author = a.getArgs()[2];
 
-        Game g = Manager.getCurrentGame();
+        Game g = GameAPI.getCurrentGame();
 
         if (a.getArgs().length == 4){
-            g = Manager.getGame(a.getArgs()[3]);
+            g = GameAPI.getGame(a.getArgs()[3]);
         }
 
         if (g == null) {
-            g = Manager.getCurrentGame();
+            g = GameAPI.getCurrentGame();
         }
 
 

@@ -16,7 +16,6 @@ import org.bukkit.event.entity.*;
 import org.bukkit.event.player.*;
 import org.bukkit.inventory.*;
 import org.bukkit.scheduler.BukkitRunnable;
-import net.cosmosmc.tryb4.Manager.Manager;
 import org.bukkit.scoreboard.*;
 
 public class Game 
@@ -43,7 +42,7 @@ public class Game
 	
 	private boolean useEndTimer = false;
 
-    private Manager manager;
+    private GameAPI manager;
 
     private boolean canStart = false;
 
@@ -52,7 +51,7 @@ public class Game
 	/**
 	 * Main purpose of this project.
 	 */
-	public Game(String name, Manager m)
+	public Game(String name, GameAPI m)
 	{
         this.manager = m;
 		this.name = name;
@@ -98,7 +97,7 @@ public class Game
         this.map = m;
     }
 
-    public Manager getManager() {
+    public GameAPI getManager() {
         return manager;
     }
 

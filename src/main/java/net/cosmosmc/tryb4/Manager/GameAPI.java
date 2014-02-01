@@ -5,21 +5,18 @@ import java.util.List;
 
 import com.devro.thecosmoscore.enums.PermissionsRank;
 import com.devro.thecosmoscore.managers.UserManager;
-import net.cosmosmc.tryb4.Manager.util.MapUtil;
-import net.cosmosmc.tryb4.Manager.util.MessageUtils;
-import net.cosmosmc.tryb4.Manager.util.QueueManager;
-import net.cosmosmc.tryb4.Manager.util.Winner;
+import net.cosmosmc.tryb4.Manager.teams.core.TeamManager;
 import org.bukkit.*;
 import org.bukkit.entity.*;
 import org.bukkit.event.*;
 import org.bukkit.event.block.*;
 import org.bukkit.event.entity.*;
 import org.bukkit.event.player.*;
-import org.bukkit.inventory.*;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.*;
 
-public class Manager extends JavaPlugin implements Listener {
+public class GameAPI extends JavaPlugin implements Listener {
+
 
 	
 	private static List<Game> queue = new ArrayList<Game>();
@@ -29,13 +26,11 @@ public class Manager extends JavaPlugin implements Listener {
     public static boolean loading = false;
 
 
-    public static QueueManager manager;
-
 	public void onEnable() {
-        manager = new QueueManager(this);
 		this.getServer().getPluginManager().registerEvents(this, this);
 		queue.clear();
 		Saving.init(this);
+        TeamManager.getInstance();
 
 
 
@@ -78,72 +73,14 @@ public class Manager extends JavaPlugin implements Listener {
     public static Game getCurrentGame() {
         return currentGame;
     }
-
-
-
-
-
-
-    public static void clear(Player p) {
-        PlayerInventory pi = p.getInventory();
-        pi.clear();
-        pi.setArmorContents(null);
-        p.setMaxHealth(20);
-        p.setHealth(20);
-        p.setFoodLevel(20);
-    }
-
-
-
-
-	public static void gameEnded(Game g, Winner w)
-    {
-
-
-        if (!w.isNoWinner())
-        {
-        if (w.isListOfPlayers()) {
-            List<String> winners = new ArrayList<String>();
-            for (Player p : w.getPlayers()) {
-                winners.add(p.getName());
-                UserManager.getUser(p).giveComets(30, "Winning a round of  " + g.getName());
-            }
-            for (Player p : Bukkit.getOnlinePlayers())
-            {
-                MessageUtils.message(p, "Winners", "The winners of " + g.getName() + " were: " + winners.toString().replace("[", "").replace("]", ""));
-            }
-        }
-        else {
-            Player p = w.getWinner();
-            UserManager.getUser(p).giveComets(50, "Winning a round of " + g.getName());
-            for (Player pl : Bukkit.getOnlinePlayers()) {
-                MessageUtils.message(pl, "Winner", "The winner of " + g.getName() + " was " + p.getDisplayName());
-            }
-        }
-        }
-        else {
-            for (Player pl : Bukkit.getOnlinePlayers()) {
-                MessageUtils.message(pl, "Winner", "The winner of " + g.getName() + " was " + w.getName());
-            }
-        }
-
-
-        g.getPlayers().clear();
-        g.getSpectators().clear();
-        for (Player p : Bukkit.getOnlinePlayers()) {
-            p.teleport(MapUtil.loadLocation("lobby"));
-            clear(p);
-        }
-
-        g = manager.nextInQueue();
-        setCurrentGame(g);
-        loading = false;
-        for (Player p : Bukkit.getOnlinePlayers()) {
-            g.addPlayer(p);
-        }
-    }
 	
-
+	
+	
+	
+	
+	
+	
+	
 	
 	
 
@@ -152,17 +89,10 @@ public class Manager extends JavaPlugin implements Listener {
 	
 	
 	
-	public static Game getGame(Player player)
-    {
-        for (Game g : queue)
-        {
-            if (g.getPlayers().contains(player)) {
-                return g;
-            }
-        }
-        return null;
-    }
-
+	
+	
+	
+	
 	public static Game getGame(String s) {
         for (Game g : queue) {
             if (g.getName().equalsIgnoreCase(s)) {
