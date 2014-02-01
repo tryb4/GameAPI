@@ -33,6 +33,7 @@ public class GameAPI extends JavaPlugin implements Listener {
     public static QueueManager manager;
 
 	public void onEnable() {
+        setInstance(this);
         manager = new QueueManager(this);
 		this.getServer().getPluginManager().registerEvents(this, this);
 		queue.clear();
@@ -70,6 +71,10 @@ public class GameAPI extends JavaPlugin implements Listener {
             }
         }.runTaskTimer(this, 20 * 3, 20 * 3);
 	}
+
+    public void onDisable() {
+        setInstance(null);
+    }
 
 
 
