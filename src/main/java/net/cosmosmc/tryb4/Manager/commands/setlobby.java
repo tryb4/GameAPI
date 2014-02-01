@@ -6,7 +6,7 @@ import com.devro.thecosmoscore.enums.PermissionsRank;
 import net.cosmosmc.tryb4.Manager.Game;
 import net.cosmosmc.tryb4.Manager.Manager;
 import net.cosmosmc.tryb4.Manager.Map;
-import net.cosmosmc.tryb4.Manager.util.l;
+import net.cosmosmc.tryb4.Manager.util.MessageUtils;
 import org.bukkit.entity.*;
 
 /**
@@ -27,7 +27,7 @@ public class setlobby {
         if (g.getMap() != null) {
             Map m = g.getMap();
             m.saveLocation("lobby", a.getPlayer().getLocation());
-            l._(a.getPlayer(), "Successfully set the lobby location for " + g.getName() + ".", "Map");
+            MessageUtils.mesage(a.getPlayer(), "Map","Successfully set the lobby location for " + g.getName() + ".");
         }
 
 

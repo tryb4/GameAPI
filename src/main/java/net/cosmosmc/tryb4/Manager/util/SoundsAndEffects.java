@@ -9,7 +9,7 @@ import java.util.List;
  * Created by TryB4
  * GameAPI
  */
-public class p {
+public class SoundsAndEffects {
 
 
     public static void playSound(List<Player> players, Sound s, float volume, float pitch)

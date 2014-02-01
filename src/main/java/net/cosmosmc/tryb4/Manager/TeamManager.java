@@ -3,7 +3,7 @@ package net.cosmosmc.tryb4.Manager;
 import java.util.ArrayList;
 import java.util.List;
 
-import net.cosmosmc.tryb4.Manager.util.l;
+import net.cosmosmc.tryb4.Manager.util.MessageUtils;
 import org.bukkit.entity.Player;
 import org.bukkit.scoreboard.Scoreboard;
 import org.bukkit.scoreboard.Team;
@@ -93,12 +93,12 @@ public class TeamManager
 		if (isTeam(t)) 
 		{
 			if (!getTeam(t).hasPlayer(p)) {
-			l._(p, "Joined " + t + " Team", "Team");
+			MessageUtils.mesage(p, "Team", "Joined " + t + " Team");
 			getTeam(t).addPlayer(p);
 			}
 		}
 		else {
-			l._(p, "Unknown team: '"+t+"'", "Error");
+			MessageUtils.mesage(p, "Error", "Unknown team: '" + t + "'");
 		}
 	}
 	
@@ -111,12 +111,12 @@ public class TeamManager
 		if (isTeam(t)) 
 		{
 			if (getTeam(t).hasPlayer(p)) {
-				l._(p, "Left " + t + " Team", "Team");
+				MessageUtils.mesage(p, "Team", "Left " + t + " Team");
 				getTeam(t).removePlayer(p);
 				}
 		}
 		else {
-			l._(p, "Unknown team: '"+t+"'", "Error");
+			MessageUtils.mesage(p,"Error", "Unknown team: '" + t + "'");
 		}
 	}
 	
