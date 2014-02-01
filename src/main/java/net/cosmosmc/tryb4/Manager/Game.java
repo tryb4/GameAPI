@@ -265,7 +265,7 @@ public class Game
         spectators.clear();
         setCanStart(false);
         setStart(20);
-        Manager.gameEnded(this, new Winner("Default Winner"));
+        GameAPI.gameEnded(this, new Winner("Default Winner"));
     }
 
 
